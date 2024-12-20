@@ -5,7 +5,7 @@ print(str1,str2,str3)
 #lenght function
 str1="Thora"
 print(len(str1))
-str2="kaliya"
+str2="kaliya loves ismaeel"
 print(str1+str2)
 # #Indexing [in indexing starting with the 0 not with the 1]
 str="Thora"
