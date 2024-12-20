@@ -3,7 +3,7 @@ str2= "Pagal.\t we creating in pyhton"
 str3= "Kaliya"
 print(str1,str2,str3)
 #lenght function
-str1="Thora"
+str1="Thora love you"
 print(len(str1))
 str2="kaliya loves ismaeel"
 print(str1+str2)
