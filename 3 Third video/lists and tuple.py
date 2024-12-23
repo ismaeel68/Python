@@ -33,7 +33,7 @@ print(list.append(4))
 print (list.sort(reverse=True))
 print(list)
 #(list methods) 3 metthod is reverse
-# list=("a","b","c","d","e","f")
+# lisd"t=("a","b","c",","e","f")
 # list.reverse()
 # print(list)
 #(list method) 4 method is insert 
