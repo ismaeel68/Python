@@ -6,9 +6,9 @@ print(marks[0])
 print(marks[2])
 #(Lists) are mutable but the strings are imutable. In strings i have an access in index but i don't change but in list this is possible i have also access and i also change it
 # Exemple of the string 
-str="hello"
-print(str[o])
-str[o]="y"
+# str="hello"
+# print(str[o])
+# str[o]="y"
 #Exemple of the list
 student=["Thora", 67.9 , 42, "Hospitalet de llobregat"]
 print(student[0])
@@ -88,13 +88,10 @@ print(type(marks))
 print(marks[0])
 print(marks[2])
 
-str="Hello"
-print(str[0])
-str(0)=[y]
+# str="Hello"
+# print(str[0])
+# str(0)=[y]
 
-str="hello"
-print(str[0])
-str(0)=[y]
 student=["Thora", 67.9 , 42, "Hospitalet de llobregat"]
 print(student[0])
 student[0]="Kaliya"
