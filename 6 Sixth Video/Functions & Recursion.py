@@ -41,17 +41,76 @@ def cal_prod(b,a=2):
     return a*b
 cal_prod(1)
 
-#practice question
+#practice question 1
 cities=("Gujrat","Kotla","Bhimber","Kotli","Lahore","Mandi","Karachi")
 heroes=("ironman","captain america","thor","batman")
 def print_len(list):
     print(len(list))
 print_len(cities)
 print_len(heroes)
-#practice question
+#practice question 2
 cities=("Gujrat","Kotla","Bhimber","Kotli","Lahore","Mandi","Karachi")
 heroes=("ironman","captain america","thor","batman")
 print(heroes[0],end=" ")
 print(heroes[1],end=" ")
 def print_len(list):
     print(len(list))
+#practice question 3
+
+def cal_fact(n):
+    fact=1
+    for i in range(1,n+1):
+        fact*=i
+    print(fact)
+cal_fact(6)
+
+#practice question 4
+def converter(usd_val):
+    pkr_val=usd_val*278
+    print(usd_val,"USD=",pkr_val,"PKR")
+
+converter(100)
+#practice question
+n=int(input("enter your num:"))
+def odd_or_even(n):
+    if(n%2==0):
+        print("Even")
+    else:
+        print("Odd")
+odd_or_even(n)
+#(Recursion) When a function calls itself repeatedly
+#Recursive function
+def show(n):
+    if(n==0):
+        return
+    print(n)
+    show(n-1)
+    print("End")
+show(3)
+def fact(n):
+    if(n==1 or n==0):
+        return 1    
+    return fact(n-1)*n
+print(fact(4))
+def fact(n):
+    if(n==1 or n==0):
+        return 1
+    return fact(n-1)*n
+print(fact(3))
+#practice question 1
+def calc_sum(n):
+    if(n==0):
+        return 0
+    return calc_sum(n-1) +n
+sum=calc_sum(5)
+print(sum)
+#practice question 2
+def print_list(list,idx=0):
+    if(idx==len(list)):
+        return
+    print(list[idx])
+    print_list(list,idx+1)
+
+Fruits=["mango","litchi","apple","banana"]
+print_list(Fruits)
+
