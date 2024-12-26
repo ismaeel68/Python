@@ -54,7 +54,7 @@
 # #(For deleting a File) using the os module
 # import os
 # os.remove("practice.txt")
-#practice question 1
+# # practice question 1
 # with open("practice.txt","w") as f:
 #     f.write("Hi everyone\nwe are learning file I/O\n")
 #     f.write("using Java.\nI like programming in Java.")
@@ -76,37 +76,39 @@
 #     else:
 #         ("Not found")
 # check_for_word()
-#practice questionn 4:
-def check_for_line():
-    word="programming"
-    data=True
-    line_no=1
-    with open ("practice.txt","r") as f:
-        while data:
-            data=f.readline()
-            if(word in data):
-                print(line_no)
-                return
-            line_no +=1
-    return-1
-check_for_line()
-#practice question 5:
-count=0
-with open("practice.txt","r") as f:
-    data=f.read()
+# #practice questionn 4:
+# def check_for_line():
+#     word="programming"
+#     data=True
+#     line_no=1
+#     with open ("practice.txt","r") as f:
+#         while data:
+#             data=f.readline()
+#             if(word in data):
+#                 print(line_no)
+#                 return
+#             line_no +=1
+#     return-1
+# check_for_line()
+# #practice question 5:
+# count=0
+# with open("practice.txt","r") as f:
+#     data=f.read()
     
     
-    # num=""
-    # for i in range(len(data)):
-    #     if (data[i]==","):
-    #          print(int(num))
-    #          num=""
-    #     else:
-    #         num+=data[i]
+#     num=""
+#     for i in range(len(data)):
+#         if (data[i]==","):
+#              print(int(num))
+#              num=""
+#         else:
+#             num+=data[i]
             
-    nums=data.spilt(",")
-    for val in nums:
-        if(int
-           (val)%2==0):
-            count+=1
-print(count)
+#     nums=data.spilt(",")
+#     for val in nums:
+#         if(int
+#            (val)%2==0):
+#             count+=1
+# print(count)
+import os
+os.remove("some practice question")
