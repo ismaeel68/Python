@@ -1,6 +1,6 @@
 # Function in python(Block of statements that perform a specific task)
 
-def calc_sum(a,b):# This is function and first def mean is define
+def calc_sum(a,b):# This is function and def mean is define
     sum=a+b
     print(sum)
 calc_sum(5,10)
@@ -113,4 +113,3 @@ def print_list(list,idx=0):
 
 Fruits=["mango","litchi","apple","banana"]
 print_list(Fruits)
-
