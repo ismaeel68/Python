@@ -117,23 +117,90 @@ acc1.debit(10000)
 # print(s1.name)
 # del s1.name
 #(private attributes & methods)
-class Account:
-    def __init__(self,acc_no,acc_pass):
-        self.acc_no=acc_no
-        self.__acc_pass=acc_pass
-    def reset_pass(self):
-        print(self.__acc_pass)
-acc1=Account("12345","abcde")
-print(acc1.acc_no)
-print(acc1.reset_pass())
+# class Account:
+#     def __init__(self,acc_no,acc_pass):
+#         self.acc_no=acc_no
+#         self.__acc_pass=acc_pass
+#     def reset_pass(self):
+#         print(self.__acc_pass)
+# acc1=Account("12345","abcde")
+# print(acc1.acc_no)
+# print(acc1.reset_pass())
 
+# class Person:
+#     __name="anonymous"
+
+#     def __hello(self,name):
+#         print("hello person!")
+#     def welcome(self):
+#         self.__hello()
+
+# p1=Person()
+# print(p1.welcome())
+#(Inheritance)When one (child/derived) dervies the properties & methods of another class(parent/base).
+#(Single Inheritance)
+# class Car:
+#     @staticmethod
+#     def start():
+#         print("car started..")
+#     @staticmethod
+#     def stop():
+#         print("car stopped.")
+# class ToyataCar(Car):
+#     def __init__(self):
+#         self.name = name 
+# car1 = ToyataCar("Landcruiser")
+# car2 = ToyataCar("Grande")
+# print(car1.name)
+#(Multi-level Inheritance)
+class Car:
+    @staticmethod
+    def start():
+        print("car started..")
+    @staticmethod
+    def stop():
+        print("car stopped.")
+class ToyataCar(Car):
+    def __init__(self,brand):
+        self.brand = brand
+class Fortuner(ToyataCar):
+    def __init__(self,type):
+        self.type = type
+car1=Fortuner("diesel")
+car1.start()
+#(Multiple Inheritance)
+# class A:
+#     varA="welcome to class A"
+# class B:
+#     varB:"welcome to class B" # type: ignore
+# class C(A,B):
+#     varC:"welcome to class C" # type: ignore
+# c1=C()
+# print(c1.varC)
+# print(c1.varB)
+# print(c1.varA)
+#(Super method) super method is used to access methods of the parent class
+class Car:
+    def __init__(self,type):
+         self.type=type
+    @staticmethod
+    def start():
+        print("car started..")
+    @staticmethod
+    def stop():
+        print("car stopped.")
+class ToyataCar(Car):
+    def __init__(self,name,type):
+        self.name = name
+        super().__init__(type)
+car1= ToyataCar("prius","electric")
+print(car1.type)
+#(Class-method)a class mmethod is bound to the class & receives the class as an implicit first argument.
 class Person:
-    __name="anonymous"
-
-    def __hello(self,name):
-        print("hello person!")
-    def welcome(self):
-        self.__hello()
-
-p1=Person()
-print(p1.welcome())
+    name="anonymous"
+    def changeName(self,name):
+        self.__class__.name="Thora"
+p1= Person()
+p1.changeName("Thora")
+print(p1.name)
+print(Person.name)

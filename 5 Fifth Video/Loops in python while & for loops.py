@@ -88,15 +88,13 @@ for el in nums:
     print(el)
     
 #practice question
-nums=(1,4,9,16,25,36,49,64,81,100,1)
-x=1
 
-idx=0
+idx="*"
 for el in nums:
-    if(el==x):
-        print("number found at idx",idx)
-        break
-        idx +=1
+        print(idx)
+        
+number = 0        
+        
 #Range is (start,stop,step)in loops Rannge functions returns a sequence of number,starting from 0 by default,and increments by 1(by default), and stops before a specified number.
 print(range(5))
 seq=range(5)
@@ -165,3 +163,6 @@ print("factorial=",fact)
 #practice
 
 
+
+for i in range (0,10):
+    print("*")
