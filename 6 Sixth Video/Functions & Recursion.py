@@ -113,3 +113,9 @@ def print_list(list,idx=0):
 
 Fruits=["mango","litchi","apple","banana"]
 print_list(Fruits)
+
+num = 14
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")

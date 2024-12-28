@@ -110,5 +110,5 @@
 #            (val)%2==0):
 #             count+=1
 # print(count)
-import os
-os.remove("some practice question")
+# import os
+# os.remove("some practice question")
