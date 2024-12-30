@@ -34,7 +34,6 @@ a = 50
 b = 20 
 print (a != b) # this is sign is showing for not equal to the value and these also give answer only in True o False
 
-
 a = 50
 b = 20
 print (a >= b) 
@@ -54,15 +53,15 @@ b = 30
 print(not False)
 print(not (a > b))
 
-# Second type of logical operators is and (and) is work on 2 values 
+# # Second type of logical operators is and (and) is work on 2 values 
 #  val1 = True 
 #  val2 = False  
 #  print("and operator:", val1 and val2) 
-#   Third type of logical operators is OR (Or) is work on 1 true 
+# #   Third type of logical operators is OR (Or) is work on 1 true 
 #  print("or operator:", val1 or val2) 
  
-#  type Conversion 
-# a =(input) 
+# #  type Conversion 
+# a=(input) 
 # b = 4.5
 # sum = (a + b)
 # print(sum)
